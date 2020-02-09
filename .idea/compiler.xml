@@ -7,20 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
-        <module name="storage" />
-        <module name="statistic-collector" />
-        <module name="producer" />
         <module name="notificator" />
+        <module name="producer" />
+        <module name="statistic-collector" />
+        <module name="storage" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="consumer" options="-parameters" />
-      <module name="notificator" options="-parameters" />
-      <module name="producer" options="-parameters" />
-      <module name="statistic-collector" options="-parameters" />
-      <module name="storage" options="-parameters" />
+      <module name="consumer" options="" />
+      <module name="notificator" options="" />
+      <module name="producer" options="" />
+      <module name="statistic-collector" options="" />
+      <module name="storage" options="" />
     </option>
   </component>
 </project>
