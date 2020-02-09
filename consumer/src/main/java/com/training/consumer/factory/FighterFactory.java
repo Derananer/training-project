@@ -1,6 +1,6 @@
 package com.training.consumer.factory;
 
-import com.training.consumer.factory.entity.Fighter;
+import com.training.consumer.dbaccess.entity.Fighter;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,4 +1,4 @@
-package com.training.consumer.factory.entity;
+package com.training.consumer.dbaccess.entity;
 
 import lombok.Builder;
 import lombok.Data;

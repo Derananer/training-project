@@ -1,5 +1,6 @@
 package com.training.consumer.kafka;
 
+import com.training.consumer.kafka.dto.MessageForStore;
 import com.training.consumer.kafka.dto.StarShipDTO;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.LongSerializer;
@@ -35,13 +36,13 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public ProducerFactory<Long, StarShipDTO> producerStarShipFactory() {
+    public ProducerFactory<Long, MessageForStore> producerStarShipFactory() {
         return new DefaultKafkaProducerFactory<>(producerConfigs());
     }
 
     @Bean
-    public KafkaTemplate<Long, StarShipDTO> kafkaTemplate() {
-        KafkaTemplate<Long, StarShipDTO> template = new KafkaTemplate<>(producerStarShipFactory());
+    public KafkaTemplate<Long, MessageForStore> kafkaTemplate() {
+        KafkaTemplate<Long, MessageForStore> template = new KafkaTemplate<>(producerStarShipFactory());
         template.setMessageConverter(new StringJsonMessageConverter());
         return template;
     }

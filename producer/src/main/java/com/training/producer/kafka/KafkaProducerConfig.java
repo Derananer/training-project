@@ -1,6 +1,7 @@
 package com.training.producer.kafka;
 
 import com.training.producer.kafka.dto.StarShipDTO;
+import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.LongSerializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -44,5 +45,11 @@ public class KafkaProducerConfig {
         KafkaTemplate<Long, StarShipDTO> template = new KafkaTemplate<>(producerStarShipFactory());
         template.setMessageConverter(new StringJsonMessageConverter());
         return template;
+    }
+
+
+    @Bean
+    public NewTopic adviceTopic(){
+        return new NewTopic("server.starship", 6, (short)1);
     }
 }

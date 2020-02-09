@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public abstract class AbstractProduct {
+public abstract class AbstractKafkaMessage {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Long id;

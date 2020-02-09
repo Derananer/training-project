@@ -1,4 +1,4 @@
-package com.training.producer.kafka.dto;
+package com.training.storage.kafka.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,6 @@ import lombok.ToString;
 @ToString(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class StarShipDTO extends AbstractKafkaMessage {
-    private String name;
-    private String type;
+public class MessageForStore extends AbstractKafkaMessage {
+    private Long starshipId;
 }
