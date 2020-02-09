@@ -5,6 +5,7 @@ https://docs.spring.io/spring-kafka/reference/html/ Spring for Apache Kafka<br>
 https://dzone.com/articles/running-apache-kafka-on-windows-os Setting Up and Running Apache Kafka on Windows OS<br>
 https://habr.com/ru/company/piter/blog/352978/  Apache Kafka: обзор<br> 
 https://habr.com/ru/post/333756/ Как писать на Spring в 2017<br>
+https://golang.org/doc/articles/wiki/#tmp_1 Getting start Go web application <br>
 
 
 possible issues:<br>
